@@ -41,8 +41,8 @@ cursor_x, cursor_y = screen_width // 4, screen_height // 4
 prev_cursor_x, prev_cursor_y = None, None
 cursor_locked = False
 controls_enabled = True  # State for enabling/disabling scroll and volume
-last_lock_toggle_time = 0  # For debouncing lock toggle
-debounce_delay = 0.5  # Debounce delay in seconds
+last_lock_toggle_time = 0
+debounce_delay = 0.5  
 
 # Click and drag parameters
 click_threshold = 0.06
@@ -94,7 +94,7 @@ def connect_arduino():
             continue
         
         print("Available ports:", [port.device for port in ports])
-        port = 'COM4' #input("Enter Arduino COM port from the list above (e.g., COM4): ").strip()
+        port = input("Enter Arduino COM port from the list above (e.g., COM4): ").strip()
         try:
             
             arduino = serial.Serial(port, 9600, timeout=1)
