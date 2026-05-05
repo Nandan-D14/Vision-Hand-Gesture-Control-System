@@ -21,7 +21,7 @@ A smart gesture-controlled interface that combines **computer vision** (MediaPip
 
 
 
-## 💡 Technologies Used
+## 💡 Technologies used in this proejct
 
 | Technology       | Purpose                            |
 |------------------|------------------------------------|
